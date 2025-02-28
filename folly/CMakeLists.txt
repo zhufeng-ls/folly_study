@@ -29,6 +29,7 @@ install(
 
 add_subdirectory(experimental/exception_tracer)
 add_subdirectory(logging/example)
+add_subdirectory(example)
 
 if (PYTHON_EXTENSIONS)
   # Create tree of symbolic links in structure required for successful
