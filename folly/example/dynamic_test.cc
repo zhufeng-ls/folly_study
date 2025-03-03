@@ -2,6 +2,7 @@
 #include <folly/dynamic.h>
 #include <folly/json.h>
 
+// 实际使用的不需要保存动态类型，多创建几个变量就行，至于转 json，完全可以被 nlohmann/json 代替
 int main() {
     // 创建各种类型的dynamic对象
     folly::dynamic nullValue = nullptr;

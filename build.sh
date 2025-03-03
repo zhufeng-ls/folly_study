@@ -30,3 +30,6 @@ for getdeps in "${GETDEPS_PATHS[@]}"; do
 done
 echo "Could not find getdeps.py" >&2
 exit 1
+
+# 手动编译
+## cmake .. -DCMAKE_INSTALL_PREFIX=../install -DBUILD_TESTS=ON -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_BUILD_TYPE=RELEASE
